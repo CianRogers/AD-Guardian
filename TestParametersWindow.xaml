@@ -1,0 +1,163 @@
+﻿<Window x:Class="AdHealthMonitor.TestParametersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Test Parameters &amp; Email Settings"
+        Height="320"
+        Width="420"
+        WindowStartupLocation="CenterOwner"
+        Background="#F0F0F0">
+
+    <Window.Resources>
+        <!-- Style for Top-Level Buttons -->
+        <!-- Merged Rounded Button Style with Hover & Click Effects -->
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#007ACC"/>
+            <!-- Default color -->
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="12"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+            <Setter Property="RenderTransform">
+                <Setter.Value>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                </Setter.Value>
+            </Setter>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Border"
+                   Background="{TemplateBinding Background}"
+                   CornerRadius="8"
+                   Padding="10">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <!-- Hover Effect -->
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#005A9E"/>
+                                <!-- Darker color -->
+                            </Trigger>
+
+                            <!-- Click Effect -->
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#003F73"/>
+                                <!-- Even darker -->
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="0.95" ScaleY="0.95"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="RoundedButtonStyleCancel" TargetType="Button">
+            <Setter Property="Background" Value="#007ACC"/>
+            <!-- Default color -->
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="12"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+            <Setter Property="RenderTransform">
+                <Setter.Value>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                </Setter.Value>
+            </Setter>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="Border"
+           Background="{TemplateBinding Background}"
+           CornerRadius="8"
+           Padding="10">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <!-- Hover Effect -->
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#adadad"/>
+                                <!-- Darker color -->
+                            </Trigger>
+
+                            <!-- Click Effect -->
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#adadad"/>
+                                <!-- Even darker -->
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="0.95" ScaleY="0.95"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <!-- White Panel for content -->
+        <Border Background="White" Padding="15" Margin="10" CornerRadius="5">
+            <StackPanel>
+                <!-- Title -->
+                <TextBlock Text="Test Parameters &amp; Email Settings"
+                           FontSize="20"
+                           FontWeight="Bold"
+                           Foreground="#007ACC"
+                           Margin="0,0,0,10"/>
+
+                <!-- Domain Controllers -->
+                <StackPanel Orientation="Vertical" Margin="0,0,0,10">
+                    <TextBlock Text="Domain Controllers (comma-separated):" 
+                               FontWeight="Bold"
+                               FontSize="14" 
+                               Foreground="#555"/>
+                    <TextBox x:Name="dcTextBox" 
+                             Margin="0,5,0,0" 
+                             FontSize="14"/>
+                </StackPanel>
+
+                <!-- Email -->
+                <StackPanel Orientation="Vertical" Margin="0,0,0,10">
+                    <TextBlock Text="Recipient Email:" 
+                               FontWeight="Bold" 
+                               FontSize="14" 
+                               Foreground="#555"/>
+                    <TextBox x:Name="emailTextBox" 
+                             Margin="0,5,0,0" 
+                             FontSize="14"/>
+                </StackPanel>
+
+                <!-- Buttons -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+                    <!-- 'Save' in the same style as 'Run' button from main window (blue) -->
+                    <Button Content="Save"
+                            Style="{StaticResource RoundedButtonStyle}"
+                            Background="#007ACC"
+                            Foreground="White"
+                            Width="80"
+                            Margin="0,0,10,0"
+                            Click="SaveButton_Click"/>
+                    <!-- 'Cancel' styled similarly to 'Stop' or 'Export' from main window (gray) -->
+                    <Button Content="Cancel"
+                            Style="{StaticResource RoundedButtonStyleCancel}"
+                            Background="#E0E0E0"
+                            Width="80"
+                            Click="CancelButton_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
