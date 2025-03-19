@@ -1,7 +1,8 @@
 # AD Guardian
 
-Hi there,  
-I’m CRogers, and welcome to **AD Guardian**—my personal tool built to monitor and test Active Directory health in a smart, automated, and user-friendly way. I created this project to simplify routine AD checks, schedule tests, and send detailed email notifications so you can always stay on top of your environment. I hope you find it useful!
+Hi,
+
+welcome to **AD Guardian**—my personal tool built to monitor and test Active Directory health in a smart, automated, and user-friendly way. I created this project to simplify routine AD checks, schedule tests, and send detailed email notifications so you can always stay on top of your environment. I hope you find it useful!
 
 ## Features
 
