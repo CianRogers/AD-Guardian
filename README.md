@@ -36,3 +36,10 @@ welcome to **AD Guardian**—my personal tool built to monitor and test Active D
    ```bash
    git clone https://github.com/CianRogers/AD-Guardian.git
 
+2. **Download and run the msi or exe installer:**
+
+   ```bash
+   git clone https://github.com/CianRogers/AD-Guardian.git
+
+  
+
