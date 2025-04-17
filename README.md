@@ -50,7 +50,7 @@ welcome to **AD Guardian**—my personal tool built to monitor and test Active 
    git clone https://github.com/CianRogers/AD-Guardian.git
    cd AD-Guardian
 
-2. **Clone the repository:**
+2. **Download the MSi installer:**
 
    ```bash
-   https://github.com/CianRogers/AD-Guardian/releases/download/v1.2.0/Domain.Guardian.Installer.msi
+   <ahttps://github.com/CianRogers/AD-Guardian/releases/download/v1.2.0/Domain.Guardian.Installer.msi/>
