@@ -53,4 +53,4 @@ welcome to **AD Guardian**—my personal tool built to monitor and test Active 
 2. **Download the MSi installer:**
 
    ```bash
-   href=<a https://github.com/CianRogers/AD-Guardian/releases/download/v1.2.0/Domain.Guardian.Installer.msi <a/>
+   https://github.com/CianRogers/AD-Guardian/releases/download/v1.2.0/Domain.Guardian.Installer.msi
