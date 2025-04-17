@@ -1,8 +1,19 @@
-# AD Guardian
+# AD Guardian
 
 Hi,
 
-welcome to **AD Guardian**—my personal tool built to monitor and test Active Directory health in a smart, automated, and user-friendly way. I created this project to simplify routine AD checks, schedule tests, and send detailed email notifications so you can always stay on top of your environment. I hope you find it useful!
+welcome to **AD Guardian**—my personal tool built to monitor and test Active Directory health in a smart, automated, and user‑friendly way. I created this project to simplify routine AD checks, schedule tests, and send detailed email notifications so you can always stay on top of your environment. I hope you find it useful!
+
+<!-- Download Buttons -->
+<p align="center">
+  <!-- Markdown badge styled via shields.io -->
+  <a href="https://github.com/CianRogers/AD-Guardian/releases/latest/download/AD-Guardian-Installer.msi">
+    <img src="https://img.shields.io/badge/Download-MSI-blue?style=for-the-badge&logo=windows" alt="Download MSI">
+  </a>
+  <a href="https://github.com/CianRogers/AD-Guardian/releases/latest/download/AD-Guardian-Installer.exe">
+    <img src="https://img.shields.io/badge/Download-EXE-blue?style=for-the-badge&logo=windows" alt="Download EXE">
+  </a>
+</p>
 
 ## Features
 
@@ -13,7 +24,7 @@ welcome to **AD Guardian**—my personal tool built to monitor and test Active D
   Get immediate visual notifications with detailed results and log viewing options.
 
 - **Email Notifications:**  
-  Receive well-formatted HTML emails summarizing test results—automatically sent when tests complete.
+  Receive well‑formatted HTML emails summarizing test results—automatically sent when tests complete.
 
 - **Detailed Logging:**  
   Logs for every test are saved, viewable, and exportable for your records.
@@ -25,8 +36,8 @@ welcome to **AD Guardian**—my personal tool built to monitor and test Active D
 
 ### Prerequisites
 
-- **Windows 10 or later**
-- **.NET 6/7/8** (depending on your target framework)
+- **Windows 10 or later**  
+- **.NET 8.0 Runtime** (if you installed the framework‑dependent build)  
 - Basic familiarity with Active Directory, **dcdiag**, and **repadmin**
 
 ### Installation
@@ -35,11 +46,4 @@ welcome to **AD Guardian**—my personal tool built to monitor and test Active D
 
    ```bash
    git clone https://github.com/CianRogers/AD-Guardian.git
-
-2. **Download and run the msi or exe installer:**
-
-   ```bash
-   git clone https://github.com/CianRogers/AD-Guardian.git
-
-  
-
+   cd AD-Guardian
