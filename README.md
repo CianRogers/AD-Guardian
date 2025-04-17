@@ -7,7 +7,7 @@ welcome to **AD Guardian**—my personal tool built to monitor and test Active 
 <!-- Download Buttons -->
 <p align="center">
   <!-- Markdown badge styled via shields.io -->
-  <a href=https://github.com/CianRogers/AD-Guardian/releases/download/v1.2.0/Domain.Guardian.Installer.msi">
+  <a href="[https://github.com/CianRogers/AD-Guardian/releases/download/v1.2.0/Domain.Guardian.Installer.msi](https://github.com/CianRogers/AD-Guardian/releases/download/v1.2.0/Domain.Guardian.Installer.msi)">
     <img src="https://img.shields.io/badge/Download-MSI-blue?style=for-the-badge&logo=windows" alt="Download MSI">
   </a>
   <a href="[https://github.com/CianRogers/AD-Guardian/AD-Guardian-Installer.exe](https://github.com/CianRogers/AD-Guardian/releases/download/v1.2.0/setup.exe">
