@@ -42,10 +42,15 @@ welcome to **AD Guardian**—my personal tool built to monitor and test Active 
 - **.NET 8.0 Runtime** (if you installed the framework‑dependent build)  
 - Basic familiarity with Active Directory, **dcdiag**, and **repadmin**
 
-### Installation
+### Installation Options
 
 1. **Clone the repository:**
 
    ```bash
    git clone https://github.com/CianRogers/AD-Guardian.git
    cd AD-Guardian
+
+2. **Clone the repository:**
+
+   ```bash
+   https://github.com/CianRogers/AD-Guardian/releases/download/v1.2.0/Domain.Guardian.Installer.msi
